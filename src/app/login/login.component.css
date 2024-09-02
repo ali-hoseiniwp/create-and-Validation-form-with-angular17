@@ -1,0 +1,117 @@
+
+.container{
+  background-image: url(../../assets/image/bg-login.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-signin {
+  max-width: 900px;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  }
+
+  form{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: firebrick;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+  }
+  
+  .form-img{
+    width: 30%;
+    height: 100%;
+    background-image: url(../../assets/image/2150887820.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  input:focus, input:active{
+    outline: 0;
+  }
+  .form-floating h1{
+    margin-bottom: 3rem;
+    color: #fff;
+  }
+
+  .form-floating{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+
+  .form-floating span{
+    color: red;
+  }
+
+  .form-floating label{
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .form-floating input{
+    border: 2px solid #fff;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 25px;
+    padding: 0 12px;
+  }
+
+  form button{
+    width: 70%;
+    border: none;
+    background-color: #fff;
+    height: 45px;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+  }
+
+  .create-ac a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width:768px) {
+    .form-img{
+      display: none;
+    }
+    form{
+      width: 100%;
+    }
+
+    .form-floating{
+      width: 80%;
+    }
+
+    form button{
+      width: 80%;
+    }
+
+    .form-floating h1{
+      text-align: center;
+    }
+  }
+
+  

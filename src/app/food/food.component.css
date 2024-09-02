@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "times";
+    src: local("times"), url(../../assets/fonts/times.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 5px;
+}
+
+a {
+    font-family: "times";
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+header{
+    max-width: 1340px;
+    width: 95%;
+    max-height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+.heading-name{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #00000073;
+    font-size: 2rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 43px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+nav>div.nav-left{
+    padding-left: 30px;
+}
+
+nav>div.nav-right{
+    padding-right: 30px;
+}
+
+nav>div.nav-right>ul>li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav>div.nav-right>ul>li>a{
+    color: #000;
+    padding-left: 25px;
+}
+
+.log-out{
+    cursor: pointer;
+    background-color: #DD4D06;
+    padding: 6px 16px;
+    border: none;
+    color: #ffffff;
+}
+
+p.log-out{
+    display: none;
+}
+
+main{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+section{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.section-item{
+    padding: 8px 24px;
+    width: 50%;
+}
+.section-item img{
+    width: 100%;
+}
+.section-item span{
+    background-color: #eee;
+    padding: 4px 8px;
+}
+.section-item>h2,h5{
+    margin: 15px 0 45px 0;
+    font-weight: 400;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.section-item>h5{
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 1.02em;
+}
+.section-right>p{
+    text-align: left;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.desc-dif{
+    color: #757575;
+}
+
+.section-item-bottom{
+    text-align: left;
+}
+.section-item-bottom h4{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+.section-item-bottom p{
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #757575;
+    line-height: 1.5;
+}
+hr{
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.main-mobile{
+    display: none;
+}
+
+section.contact{
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+}
+
+.contact{
+    padding: auto 24px;
+}
+
+.contact h2{
+    margin: 15px 0 20px 0;
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+.contact p{
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+.contact strong{
+    color: #607d8b;
+    font-size: 18px;
+}
+form{
+    width: 100%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 16px 8px;
+    font-family: "time";
+    font-size: 15px;
+    margin-top: 16px;
+}
+
+input[type=datetime-local]{
+    color: #000000c2;
+}
+
+form>button{
+    border: none;
+    padding: 16px;
+    background-color: #eee;
+    font-family: "time";
+    font-size: 15px;
+    margin: 32px 0;
+}
+
+footer{
+    padding: 32px 0;
+    background-color: #f1f1f1;
+    color: #000;
+    text-align: center;
+}
+
+footer p{
+    margin: 15px 0;
+}
+footer p>a{
+    color: #DD4D06;
+}
+
+@media screen and (max-width:768px) {
+    nav>div.nav-right>ul{
+        display: none;
+    }
+
+    p.log-out{
+        display: inline-block;
+    }
+
+    header{
+        /* width: 100%; */
+        overflow: hidden;
+        height: auto;
+    }
+    .main-desktop{
+        display: none;
+    }
+
+    .main-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    section{
+        flex-direction: column;
+        /* width: 70%; */
+    }
+
+    .section-item{
+        width: 100%;
+    }
+    .section-item img{
+        width: 100%;
+    }
+    section.contact{
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    footer p, a{
+        font-size: 12px;
+    }
+}
